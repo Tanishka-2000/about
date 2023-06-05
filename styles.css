@@ -183,6 +183,11 @@ li a:hover{
     text-align: center;
 }
 
+.projects .detail .links{
+    margin-block: 10px;
+    display: block;
+}
+
 .projects .detail .links a{
     color: inherit;
     font-size: 1.5rem;
@@ -209,7 +214,7 @@ li a:hover{
 
 .projects .grid > div:hover > .detail{
     transform: scale(1);
-    top: 45%;
+    top: 42%;
 }
 
 /* different colors of projects */
@@ -324,16 +329,36 @@ footer img{
     .projects .grid{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .projects .detail{
+        transform: scale(1);
+    }
+
+    .projects .grid > div > .material-symbols-outlined{
+        font-size: 45px;
+        transform: translateY(-70px);
+    }
+    
+    .projects .grid > div > .name{
+        transform: translateY(-80px);
+        font-size: 1.3rem;
+    }
+    
+    .projects .grid > div > .detail{
+        transform: scale(1);
+        top: 41%;
+    }
 }
 
-@media (width < 540px) {
+@media (width < 640px) {
     nav > ul{
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: 500;
+        gap: 20px;
     }
 
     nav > ul li.logo{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .hero{
@@ -378,10 +403,11 @@ footer img{
 
     .projects{
         margin: 50px auto;
-        max-width: 400px;
+        max-width: 420px;
     }
 
     .projects .grid{
         grid-template-columns: auto;
     }
+
 }
