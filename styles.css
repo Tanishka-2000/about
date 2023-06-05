@@ -61,7 +61,7 @@ li a:hover{
 
 .intro{
     width: 430px;
-    background-color: #576CBC80;
+    background-color: #576CBC60;
     color: #576CBC;
     display:  grid;
     place-content: center;
@@ -105,7 +105,7 @@ li a:hover{
 /* skills section */
 
 .skills{
-    background-color: #576CBC80;
+    background-color: #576CBC60;
     color: #576CBC;
     padding: 30px 0 60px;
 }
@@ -256,7 +256,7 @@ li a:hover{
 /* footer */
 
 footer{
-    background-color: #576CBC80;
+    background-color: #576CBC60;
     color: #576CBC;
     padding: 2px 0 20px;
 }
