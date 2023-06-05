@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+nav{
+    background-color: rgba(255, 255, 255, .8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+nav > ul{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    margin: auto;
+    gap: 50px;
+    font-weight: 700;
+    color: #888;
+    font-size: 1.2rem;
+}
+
+nav ul li.logo{
+    margin-right: auto;
+    font-size: 1.4rem;
+}
+
+li a{
+    color: #888;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #444;
+    text-decoration: underline;
+}
+
+.hero{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.hero img{
+    transform: rotateY(180deg);
+}
+
+.intro{
+    width: 430px;
+    background-color: #576CBC80;
+    color: #576CBC;
+    display:  grid;
+    place-content: center;
+    padding: 40px;
+}
+
+/* about */
+
+.about{
+    max-width: 1200px;
+    margin: 70px auto 100px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: .3px;
+    font-weight: 300;
+    padding-inline: 20px;
+}
+
+/* utility heading classes */
+
+.headingR, .headingM, .headingL{
+    text-align: end;
+    color: #777;
+    margin-block: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.headingM{
+    text-align: center;
+    color: #576CBC;
+}
+
+.headingL{
+    margin-inline: auto;
+    text-align: left;
+    color: #576CBC;
+}
+
+/* skills section */
+
+.skills{
+    background-color: #576CBC80;
+    color: #576CBC;
+    padding: 30px 0 60px;
+}
+
+.stack{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.stack > div{
+    padding: 0 50px;
+    flex-basis: 50%;
+}
+
+.stack div:nth-child(1){
+    border-right: 1px solid #576CBC;
+    text-align: right;
+}
+
+.stack h2{
+    margin-bottom: 40px;
+}
+
+.stack ul{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.stack ul li{
+    margin: 12px 0;
+    padding: 4px 0;
+    font-weight: 500;
+    border-bottom: 1px solid #576CBC95;
+}
+
+/* project */
+
+.projects{
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.projects h2{
+    margin-right: 0;
+}
+
+.projects .grid{
+    display:  grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.projects .grid div{
+    height: 260px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    gap: 20px;
+    position: relative;
+    padding: 10px;
+}
+
+.projects .detail{
+    font-size: 1.15rem;
+    transform: scale(0);
+    position: absolute;
+    top: 80%;
+    font-weight: 400;
+    padding-inline: 10px;
+    text-align: center;
+}
+
+.projects .detail .links a{
+    color: inherit;
+    font-size: 1.5rem;
+    margin-inline: 2px;
+}
+
+/* creating hover effect on cards*/
+
+.projects .detail,
+.projects .material-symbols-outlined,
+.projects .name{
+    transition: all 500ms;
+}
+
+.projects .grid > div:hover > .material-symbols-outlined{
+    font-size: 45px;
+    transform: translateY(-70px);
+}
+
+.projects .grid > div:hover > .name{
+    transform: translateY(-80px);
+    font-size: 1.3rem;
+}
+
+.projects .grid > div:hover > .detail{
+    transform: scale(1);
+    top: 45%;
+}
+
+/* different colors of projects */
+
+.projects .material-symbols-outlined{
+    font-size: 60px;
+}
+
+.projects .grid div:nth-child(1) {
+    color: #C38154;
+    background-color: #C3815430 ;
+}
+
+.projects .grid div:nth-child(2) {
+    background-color: #47A99230;
+    color: #47A992;
+}
+
+.projects .grid div:nth-child(3) {
+    background-color: #FEA1A130;
+    color: #FEA1A1;
+}
+
+.projects .grid div:nth-child(4) {
+    background-color: #99627A30;
+    color: #99627A;
+}
+
+.projects .grid div:nth-child(5) {
+    background-color: #fc6b0430;
+    color: #fc6b04;
+}
+
+.projects .grid div:nth-child(6) {
+    background-color: #9EB23B30;
+    color: #9EB23B;
+}
+
+/* footer */
+
+footer{
+    background-color: #576CBC80;
+    color: #576CBC;
+    padding: 2px 0 20px;
+}
+
+footer h2{
+    max-width: 900px;
+    padding-inline: 20px;
+}
+
+footer > div{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+footer ul li i,
+footer .material-symbols-outlined{
+    font-size: 1.5rem;
+}
+
+footer li a{
+    color: #576CBC;
+    text-decoration: none;
+}
+
+footer img{
+    height: 25px;
+}
+
+@media (width < 1250px) {
+    .projects{
+        margin-inline: 20px;
+    }
+
+    .projects .detail{
+        font-size: 1rem;
+    }
+
+    .projects .grid > div:hover > .detail{
+        top: 40%;
+    }
+}
+
+@media (width < 950px) {
+
+    .hero img{
+        width: 350px;
+    }
+
+    .projects{
+        max-width: 760px;
+        padding-inline: 20px;
+        margin-inline: auto;
+    }
+
+    .projects .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width < 540px) {
+    nav > ul{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    nav > ul li.logo{
+        font-size: 1.2rem;
+    }
+
+    .hero{
+        display: grid;
+        place-items: center;
+    }
+
+    .intro{
+        width: 100%;
+        background-color: transparent;
+        color: #444;
+        display: block;
+        place-content: center;
+        padding: 0px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .about{
+        font-size: 1rem;
+        margin: 50px auto;
+    }
+
+    .headingR, .headingM, .headingL{
+        margin-block: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .stack h2{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .stack > div{
+        padding: 0 20px;
+    }
+
+    .stack ul {
+        font-size: 1rem;
+    }
+
+    .projects{
+        margin: 50px auto;
+        max-width: 400px;
+    }
+
+    .projects .grid{
+        grid-template-columns: auto;
+    }
+}
